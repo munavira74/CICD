@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy custom HTML files into the container (optional)
-# COPY ./your_local_directory /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
 
 # Expose port 80 (NGINX's default port)
 EXPOSE 80
